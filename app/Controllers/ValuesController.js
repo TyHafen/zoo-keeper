@@ -10,7 +10,7 @@ function _draw() {
   values.forEach(v => cardsTemplate += v.CardTemplate)
   document.getElementById("app").innerHTML = /*html*/`
   <div class="my-3">
-    <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.addValue()">Add Value</button>  
+    <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.gerbil()">Add Value</button>  
     <div class="values d-flex flex-wrap my-3">
       ${cardsTemplate}
     </div>
@@ -35,5 +35,27 @@ export class ValuesController {
       valuesService.removeValue(id)
     }
   }
-
+  sayHello() {
+    valuesService.sayHello()
+  }
+  batFeed() {
+    valuesService.batFeed()
+  }
+  catFacts() {
+    valuesService.catFacts()
+  }
+  dragonScary() {
+    valuesService.dragonScary()
+  }
+  emuDumb() {
+    valuesService.emuDumb()
+  }
+  froggy() {
+    valuesService.frogFight()
+  }
+  gerbil() {
+    valuesService.goGerbil()
+  }
 }
+
+
